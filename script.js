@@ -18,7 +18,11 @@ div.style.borderStyle = "solid";
 div.style.backgroundColor = "pink";
 document.body.appendChild(div);
 
-const h1 = document.createElement("p");
-h1.classList.add("meToo");
-h1.textContent = "ME TOO!";
+const h1 = document.createElement("h1");
+h1.classList.add("h1");
+h1.textContent = "I'm in a div!";
 div.appendChild(h1);
+
+const pInsideDiv = document.createElement("p");
+pInsideDiv.textContent = "ME TOO!";
+div.appendChild(pInsideDiv);
